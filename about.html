@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PAZ DO</title>
+    <link rel="stylesheet" href="./style/reset.css" />
+    <link rel="stylesheet" href="./style/about.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/todo-logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--HEADER SECTION-->
+    <header>
+      <div class="logo">
+        <a href="./index.html"
+          ><img class="logo-pic" src="./assets/todo-logo.png" alt="logo-name"
+        /></a>
+        <h2><a class="logo-text" href="./index.html">PAZ DO</a></h2>
+      </div>
+      <nav>
+        <ul class="nav-items">
+          <li><a class="nav-list" href="./index.html">Home</a></li>
+          <li><a class="nav-list" href="./about.html">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--BODY SECTION-->
+    <main>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img class="contact-info" src="./assets/yazan.png" alt="Me" />
+          </div>
+          <div class="flip-card-back contact-breaf">
+            <p>
+              Hey, this is <span>Yazan Alfarra</span><br />
+              a software | Python | Full Stack Web developer<br />
+              you can reach me either via the contact form or<br />
+              through the links in the footer.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form">
+        <form>
+        <table>
+            <tr>
+                <td><label for="fname">First name</label></td>
+                <td><label for="lname">Last name</label></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="fname" id="fname" placeholder="Yazan"></td>
+                <td><input type="text" name="lname" id="lname" placeholder="Alfarra"></td>
+            </tr>
+            <tr>
+                <td><label for="email">E-mail</label></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="text" name="email" id="email" placeholder="yalfarra@outlook.com"></td>
+            </tr>
+            <tr>
+                <td><label for="subject">Subject</label></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="text" name="Subject" id="subject" placeholder="Job Offer"></td>
+            </tr>
+            <tr>
+                <td><label for="message">Message</label></td>
+            </tr>
+            <tr>
+                <td colspan="2"><textarea id="message" name="message"cols="47" rows="10" placeholder="Your message goes here."></textarea></td>
+            </tr>
+            <tr>
+                <td><button><a class="submit-button" href="#">Submit</a></button></td>
+            </tr>
+        </table>
+        
+    </form>
+      </div>
+      <div class="pop-up">
+        <p>Thank you for contacting me, I will get back to you as soon as possible,<br>
+          mean while <a class="greeting-a" href="./index.html">click here</a> to go back and accomplsih your tasks <br>or click on the (x) in the top right corner to send a new message.</p>
+      <div class="close-window"> 
+        <img src="./assets/close.png" alt="">
+      </div>
+    </div>
+    </main>
+    <!--FOOTER SECTION-->
+    <footer>
+      <img class="footer-logo" src="./assets/todo-logo.png" alt="" />
+      <p class="copyright">&copy 2022 PAZ DO, Inc.</p>
+      <div>
+        <a
+          style="padding: 10px 5px"
+          href="https://web.facebook.com/yazanismail001"
+          ><img class="footer-icons" src="./assets/facebook.png" alt="Facebook"
+        /></a>
+        <a
+          style="padding: 10px 5px"
+          href="https://www.instagram.com/yazanismail1/"
+          ><img
+            class="footer-icons"
+            src="./assets/instagram.png"
+            alt="Instagram"
+        /></a>
+        <a style="padding: 10px 5px" href="https://twitter.com/yaz_ism"
+          ><img class="footer-icons" src="./assets/twitter.png" alt="Twitter"
+        /></a>
+        <a
+          style="padding: 10px 5px"
+          href="https://www.linkedin.com/in/yazan-alfarra/"
+          ><img class="footer-icons" src="./assets/linkedin.png" alt="LinkedIn"
+        /></a>
+      </div>
+    </footer>
+    <script src="./js/about.js"></script>
+  </body>
+</html>
