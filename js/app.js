@@ -39,14 +39,14 @@ if (viewGreeting == true && (userInitials(userGender) !== null)) {
 
 // Home Page Welcoming Message - Phase 2 Requirements //
 
-var question1 = prompt("Do you love programming? (answer by Yes or No)");
-var question2 = prompt("Do you know the difference between programming and coding? (answer by Yes or No)");
-var question3 = prompt("Are you enjoying this prep-course? (answer by Yes or No)");
+var question1 = prompt("Do you love programming? (answer by Yes or No)").toLowerCase();
+var question2 = prompt("Do you know the difference between programming and coding? (answer by Yes or No)").toLowerCase();
+var question3 = prompt("Are you enjoying this prep-course? (answer by Yes or No)").toLowerCase();
 
 var answerArr = [question1, question2, question3];
 
 for (var i = 0; i < answerArr.length; i++){
-    if (answerArr[i].length == 0){
+    if (answerArr[i].length == 0 && answerArr[i] !== "yes" && answerArr[i] !=="no"){
         answerArr[i] = "invalid";
     }
     console.log(answerArr[i]);
